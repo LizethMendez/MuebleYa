@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+    <form class="formulario" action="">
+
+        <h1>Registrate</h1>
+        <div class="contenedorf">
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Usuario" id="in_usuario">
+
+            </div>
+            <div class="input-contenedor">
+                <i class="far fa-envelope icon"></i>
+                <input type="text" placeholder="Email" onchange="valCorreo(event.target.value)"autocomplete="off"/>
+
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-unlock icon"></i>
+                <input type="password" placeholder="Contraseña" id="in_contrasena">
+
+            </div>
+            <input type="submit" value="Registrate" class="button" onclick= "error()">
+            <P>Al registrarse, aceptas nuestras Condiciones de uso y Politica de privacidad.</P>
+            <P>¿Ya tienes cuenta?<a class="link" href="Loginvista.html"> Iniciar Sesión</a></P>
+        </div>
+    </form>
+    <script src="assets/js/validaciones.js"></script>
+    <script src="assets/js/registro.js"></script>
+    <script src="https://kit.fontawesome.com/9022299173.js" crossorigin="anonymous"></script>
+</body>
+</html>

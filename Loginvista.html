@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body style="background-image: url(https://res.cloudinary.com/prabyc/image/upload/v1637101722/muebles/2_ulkutb.jpg);">
+
+    <form class="formulario" action="">
+
+        <h1>Login</h1>
+        <div class="contenedor">
+        
+            <div class="input-contenedor">
+                <i class="far fa-envelope icon"></i>
+                <input type="text" placeholder="Email" onchange="valCorreo(event.target.value)"autocomplete="off"/>
+
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-unlock icon"></i>
+                <input type="password" placeholder="Contraseña" id="in_contrasena">
+
+            </div>
+            <input type="submit" value="Login" class="button" onclick="val()"><br>
+            
+            <P>¿No tienes cuenta?<a class="link" href="Registro.html"> Registrate</a></P>
+        </div>
+    </form>
+    <script src="assets/js/validaciones.js"></script>
+    <script src="https://kit.fontawesome.com/9022299173.js" crossorigin="anonymous"></script>
+</body>
+</html>
