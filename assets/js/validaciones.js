@@ -1,5 +1,5 @@
 
- function validar_nombreUsuario(String){
+function validar_nombreUsuario(String){
     let input = document.getElementById("in_usuario");
     let regxp = /^([a-zA-Z0-9_-]){3,9}$/;
         if(input != regxp){
@@ -62,3 +62,17 @@ function validar_contrasena(String){
             alert("Email incorrecto")
         }
     }
+    
+    const mysql = require(´mysql`)
+
+    const conection = mysql.createConnection({
+        host:´localhost`,
+        user:´ginazaraza30@gmail.com`,
+        password:´`,
+        database:´muebleya`
+    }]
+
+    conection.connect( (err) =>{
+        if(err) throw err
+        console.log(´la conexion funciona`)
+})    

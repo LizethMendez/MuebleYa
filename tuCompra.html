@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Verti by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TuCompra</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	</head>
+	<body class="is-preload left-sidebar">
+		<div id="">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<header id="header" class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<img id="navbar_logo" src="https://res.cloudinary.com/prabyc/image/upload/v1638656761/muebles/Logofinal3_auwkma.png" alt="" height="110px" >
+				
+							</div>
+
+						<!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="index.html">Incio</a></li>
+                                <li>
+                                    <a href="registros.html">Registro</a>
+                                    <ul>
+                                        <li><a href="login.html">Iniciar sesión</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="muebles.html">Muebles</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li class="current"><a href="tuCompra.html">Tu compra</a></li>
+                            </ul>
+                        </nav>
+
+					</header>
+				</div>
+	<div id="main-wrapper">
+	<div class="container">
+        <h1 class="text-center">Carrito</h1>
+        <hr>
+
+        <div class="my-5">
+            <h4>Carrito de compras</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer-carrito">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+        <div class="row" id="contenedor-productos"></div>
+
+
+    </div>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm">
+                +
+            </button>
+            <button class="btn btn-danger btn-sm">
+                -
+            </button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-productos">
+        <div class="col-12 col-md-4 mb-3">
+            <div class="card">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">
+                      Café
+                  </h5>
+                  <p class="card-text">$ <span>5000</span></p>
+                  <button class="btn btn-dark">
+                      Comprar
+                  </button>
+                </div>
+              </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+                        
+            
+              
+               
+
+		<!-- Footer -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Nosotros</h3>
+										<ul class="style2">
+											<li><a href="#">Nosotros</a></li>
+											<li><a href="#">Muebles</a></li>
+											<li><a href="#">Registro</a></li>
+											<!--<li><a href="#">Felis varius pellentesque potenti</a></li>
+											<li><a href="#">Nullam scelerisque blandit leo</a></li>-->
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Recursos</h3>
+										<ul class="style2">
+											<li><a href="#">Preguntas Frecuentes</a></li>
+											<li><a href="#">Manual de uso</a></li>
+											<li><a href="#">Políticas de envío</a></li>
+											<li><a href="#">Términos y condiciones</a></li>
+											<li><a href="#">Garant&iacute;a</a></li>
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Links -->
+									<section class="widget links">
+										<h3>Links de Inter&eacute;s</h3>
+										<ul class="style2">
+											<li><a href="#">Políticas de privacidad y Protección de datos</a></li>
+											<li><a href="#">Superintendencia de Industria y Comercio</a></li>
+											<!--<li><a href="#">Sed porttitor cras in erat nec</a></li>
+											<li><a href="#">Felis varius pellentesque potenti</a></li>
+											<li><a href="#">Nullam scelerisque blandit leo</a></li>-->
+										</ul>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+
+								<!-- Contact -->
+									<section class="widget contact last">
+										<h3>Cont&aacute;ctanos</h3>
+										<ul>
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+										</ul>
+										<p>Empresa Colombiana <br />
+										Bogotá D.C., Colombia<br />
+										(313) 242-2473</p>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; 2021 &middot; www.muebleya.com &middot; Todos los derechos reservados</li><li>Design: <a href="http://html5up.net">HTML5 UP & MisiónTIC 2022 Grupo 09</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
+</html>
